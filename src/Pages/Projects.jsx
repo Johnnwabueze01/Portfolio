@@ -71,7 +71,7 @@ const projects = [
   
   const Projects = () => {
     return (
-      <section id="projects" className="py-12 bg-gray-900 text-white ">
+      <section id="project" className="py-20 bg-gray-900 text-white ">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
           
