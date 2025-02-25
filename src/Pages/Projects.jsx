@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import word from "../assets/Word Sanctuary.png"
 import UHS from "../assets/Unity High School.png"
-import vidhub from "../assets/VIDHUB.png"
+import VIDHUB from "../assets/VidHUB.png"
 import Quiz from "../assets/My Quiz App.png"
 import meme from "../assets/Meme Generator.png"
 import style from "../assets/Style Nest.png"
@@ -31,7 +31,7 @@ const projects = [
       id: 3,
       title: "VIDHUB",
       description: "created a youtube clone that calls data from an API",
-      image: vidhub ,
+      image: VIDHUB ,
       github: "https://github.com/Johnnwabueze01/VIDHUB",
       live: "https://vidhub-six.vercel.app/",
     },
