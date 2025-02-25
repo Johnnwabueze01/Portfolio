@@ -201,7 +201,7 @@ const Contact = () => {
           {/* Error Message */}
           {error && (
             <p className="text-red-500 bg-red-100 p-3 rounded-md text-center">
-              ❌ Failed to send message. Please try again.
+              ❌ Failed to send message. Check your internet connection and try again.
             </p>
           )}
 
@@ -247,7 +247,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 rounded-lg font-medium border-2 border-white transition"
+              className="w-full bg-blue-500 text-white py-3 rounded-lg font-medium border-2 border-white transition cursor-pointer"
             >
               Send Message
             </button>

@@ -6,3 +6,7 @@
 input, textarea{
     background-color: #fff;
 }
+button:hover{
+    background-color: #1d1c1c;
+    transition: all ease-in 0.3s;
+}
