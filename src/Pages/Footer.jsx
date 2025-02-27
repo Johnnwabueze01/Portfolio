@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <p className="text-sm text-white">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} John Nwabueze. All rights reserved.
         </p>
       </div>
     </footer>
