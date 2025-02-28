@@ -7,27 +7,37 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // Close menu on mobile after clicking
+      setIsOpen(false); 
     }
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 text-white">
+    <nav className="fixed top-0 left-0 w-full shadow-md z-50 text-white">
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-2xl font-bold">John Nwabueze</h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 items-center">
           {["home", "about", "project", "skills", "contact"].map((item) => (
-            <li
+            <button
               key={item}
-              className="cursor-pointer hover:text-blue-500"
+              className="cursor-pointer hover:text-blue-500 transition"
               onClick={() => scrollToSection(item)}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
-            </li>
+            </button>
           ))}
-        </ul>
+          
+          {/* Resume Download Button */}
+          <a
+          id="resume"
+            href="/Resume.pdf"
+            download="John Nwabueze Resume.pdf"
+            className=" text-black px-4 py-2 rounded-md font-bold transition"
+          >
+            Download Resume
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -40,16 +50,28 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden bg-white shadow-md absolute w-full left-0 top-16 p-4 space-y-4">
+        <ul className="md:hidden bg-white shadow-md absolute w-full left-0 top-16 p-4 space-y-4 text-center">
           {["home", "about", "project", "skills", "contact"].map((item) => (
             <li
               key={item}
-              className="cursor-pointer hover:text-blue-500 text-center"
+              className="cursor-pointer hover:text-blue-500"
               onClick={() => scrollToSection(item)}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </li>
           ))}
+
+          {/* Resume Download Button for Mobile */}
+          <li>
+            <a
+            id="resume"
+              href="/Resume.pdf"
+              download="John Nwabueze Resume.pdf"
+              className="block text-black font-bold px-4 py-2 rounded-md transition w-full text-center"
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
       )}
     </nav>

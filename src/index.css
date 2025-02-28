@@ -10,3 +10,80 @@ button:hover{
     background-color: #1d1c1c;
     transition: all ease-in 0.3s;
 }
+.top a{
+    background: transparent;
+}
+#top{
+    background: none;
+}
+#icon {
+    background: transparent;
+    color: #d6d2d2;
+}
+#resume{
+    background-color: #fff;
+    transition: all ease-in 0.2s;
+}
+#resume:hover{
+    background-color: #1d1c1c;
+    color: #fff;
+}
+/*
+.hire button {
+    background-color: #22c55e;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  #hire{
+    background: none;
+  }
+  
+  .hire button:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+  }
+  
+  
+  .hire:hover #iconh {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+  }
+    */
+
+.hire button {
+    background-color: #fff; 
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  #hire{
+    background: none;
+  }
+  
+  
+  
+  #iconh {
+    background-color: #fff; 
+    padding: 6px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+  .hire button:hover {
+    background-color: #000;
+    color: #fff; 
+    transform: scale(1.05); 
+  }
+  
+  /* Change icon background on button hover */
+  .hire button:hover #iconh {
+    background-color: #ececec;
+    color: #000; /* Even darker green */
+    transform: rotate(10deg); /* Slight tilt effect */
+  }
+  

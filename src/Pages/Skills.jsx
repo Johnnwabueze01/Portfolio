@@ -7,7 +7,6 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLaptopCode, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import { CodeBracketIcon } from "@heroicons/react/24/solid"; // Tailwind Icon
 
 const skills = [
   { name: "HTML5", icon: <FontAwesomeIcon icon={faHtml5} className="text-orange-500 text-4xl mb-3" /> },
@@ -31,7 +30,7 @@ const Skills = () => {
               key={index}
               className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-green-500/40 transition duration-300 flex flex-col items-center justify-center"
             >
-              {skill.icon} {/* ✅ Now this renders correctly */}
+              {skill.icon} 
               <p className="text-white font-semibold">{skill.name}</p>
             </div>
           ))}

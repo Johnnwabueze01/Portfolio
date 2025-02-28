@@ -20,9 +20,8 @@ function App() {
       <Contact />
       <Footer />
       <div className="top">
-        <a href="#top" className="fixed bottom-5 right-5 p-3 text-white
-          ">
-           <FontAwesomeIcon icon={faCircleArrowUp} className="text-4xl shadow-lg transition-all duration-700 transform" />
+        <a href="#top" className="fixed bottom-5 right-5 p-3">
+           <FontAwesomeIcon id="icon" icon={faCircleArrowUp} className="text-4xl shadow-lg transition-all duration-700 transform" />
                      </a>
       </div>
     </div>
