@@ -22,7 +22,7 @@ const skills = [
 const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-gray-900 text-white">
-      <div className="max-w-6xl mx-auto px-6 text-center mt-20">
+      <div className="max-w-6xl mx-auto px-6 text-center md:mt-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">💡 My Skills</h2>
         <div className="grid grid-cols-2 justify-center sm:grid-cols-3 md:grid-cols-3 gap-6">
           {skills.map((skill, index) => (

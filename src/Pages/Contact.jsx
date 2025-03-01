@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex items-center justify-center min-h-screen">
+    <section id="contact" className="flex items-center justify-center md:min-h-screen">
       {/*Loader */}
       {loading && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-90 z-50">

@@ -6,8 +6,8 @@ import { faBullseye } from "@fortawesome/free-solid-svg-icons/faBullseye";
 
 const About = () => {
     return (
-      <section id="about" className="mb-20 flex  justify-center">
-        <div className="flex flex-col text-center mt-20">
+      <section id="about" className="md:mb-20 flex  justify-center">
+        <div className="flex flex-col text-center md:mt-20">
         <h2 className="text-3xl font-bold text-white">About Me</h2>
         <small className="text-white">**A short BIO**</small>
         <span className="text-center m-10 md:mt-10 md:ml-40 md:mr-40 text-white"> 

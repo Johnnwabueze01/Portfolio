@@ -20,7 +20,7 @@ import Mypic from "../assets/jay.png"
 
       </div>
 
-      <div className="w-full h-screen md:w-1/2 p-6 text-center">
+      <div className="w-full md:w-1/2 p-6 text-center">
        <img src={Mypic} alt="" />
       </div>
     </div>
